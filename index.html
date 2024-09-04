@@ -6,166 +6,98 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>L'harmonie - Dia Internacional da Música</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="imagens/fluent_music-notes-24-filled.svg" type="image/sgv">
 </head>
 
 <body>
     <header>
-        <div class="container">
-            <div class="nome-pagina">
-                <img src="imagens/fluent_music-notes-24-filled.svg" alt="Logo Notinha Musical" class="logo-icone">
-                <h1>L'harmonie</h1>
-            </div>
+        <div class="logo">
+            <h1>L'harmonie</h1>
+            <img src="imagens/fluent_music-notes-24-filled.svg" alt="logo: notinha musical">
         </div>
     </header>
-    
+
     <main>
-        <section class="dentro-da-imagem">
-            <div class="paginas">
+        <section class="hero">
+            <div class="hero_paginas">
                 <nav>
-                    <ul>
-                        <li><a href="#">Shows e eventos</a></li>
-                        <li id="separador">|</li>
+                    <ul class="nav-links">
+                        <li class="nav-itens"><a href="#">Shows e Eventos</a></li>
                         <li><a href="#">Playlists</a></li>
-                        <li id="separador">|</li>
-                        <li><a href="#">Últimas notícias</a></li>
-                        <li id="separador">|</li>
-                        <li><a href="#">Cifras</a></li>
-                        <li id="separador">|</li>
+                        <li><a href="#">Início</a></li>
+                        <li><a href="#">Gêneros Musicais</a></li>
                         <li><a href="#">Comunidade</a></li>
                     </ul>
                 </nav>
             </div>
-            <div class="titulo-container">
-                <div class="textos-titulo">
-                    <h2>1º de Outubro: Dia Internacional da Música</h2>
-                    <p>Conheça mais sobre a data que comemora uma das formas de expressão artística mais populares do mundo.</p>
-                </div>
+            <div class="hero_content">
+                <h2>1º de Outubro: Dia Internacional da Música</h2>
+                <p>Conheça mais sobre a data que comemora uma das formas de expressão artística mais populares do mundo.</p>
             </div>
         </section>
 
-        <section class="sobre">
-            <div class="sobre-container">
-                <p>A música é uma das artes que mais despertam emoções no coração das pessoas. É por isso que existe o Dia Internacional da Música, celebrado em todo o mundo no dia 1º de outubro.</p>
+        <section class="introducao">
+            <div class="paragrafo_introducao">
+                <p>A música é uma das artes que mais despertam emoções no coração das pessoas. É por isso que existe o Dia Internacional da Música, celebrado em todo o mundo no dia 1º de outubro. </p>
+                <p>&nbsp;</p>
                 <p>A data foi criada especialmente para celebrar e homenagear toda e qualquer expressão musical. Essa é só uma das muitas curiosidades sobre a música que vale a pena conhecer.</p>
             </div>
         </section>
 
         <section class="historia">
-            <div class="historia-container">
-                <h2>História do Dia Internacional da Música</h2>
-                <p>O dia 1º de outubro foi definido como o Dia Internacional da Música em 1975. Desde então, tem sido um pretexto para valorizar essa arte que faz tanta diferença na vida das pessoas. A data comemorativa foi definida pelo International Music.</p>
-                <div class="foto-historia"> <img src="imagens/foto-historia.jpg" alt="imagem de instrumentos"></div>
+            <h2>História do Dia Internacional da Música</h2>
+            <p>O dia 1º de outubro foi definido como o Dia Internacional da Música em 1975. Desde então, tem sido um pretexto para valorizar essa arte que faz tanta diferença na vida das pessoas.</p>
+            <p>&nbsp;</p>
+            <p>A data comemorativa foi definida pelo International Music Council, uma organização não-governamental, fundada em 1949 pela UNESCO.
+            A instituição foi criada com o objetivo de promover a paz e a amizade entre os povos, por meio do poder da música.</p>
+            <div class="historia-imagem">
+                <img src="imagens/foto-historia.jpg" alt="foto para o tópico de historia da data">
             </div>
         </section>
 
-        <section class="datas-importantes">
-            <h2>Mais datas importantes para o meio musical</h2>
-            <p>Alguns instrumentos e outros elementos do universo musical possuem seus próprios dias comemorativos, como:</p>
-            <table border="3">
-                <tr>
-                    <td>10 de Março</td>
-                    <td><strong>Dia do Guitarrista</strong></td>
-                </tr>
-                <tr>
-                    <td>29 de Março</td>
-                    <td><strong>Dia Mundial do Piano</strong></td>
-                </tr>
-                <tr>
-                    <td>16 de Abril</td>
-                    <td><strong>Dia Mundial da Voz</strong></td>
-                </tr>
-                <tr>
-                    <td>29 de Abril</td>
-                    <td><strong>Dia Mundial da Dança</strong></td>
-                </tr>
-                <tr>
-                    <td>30 de Abril</td>
-                    <td><strong>Dia Internacional do Jazz</strong></td>
-                </tr>
-                <tr>
-                    <td>17 de Outubro</td>
-                    <td><strong>Dia do Saxofonista</strong></td>
-                </tr>
-                <tr>
-                    <td>22 de Novembro</td>
-                    <td><strong>Dia de Santa Cecília</strong> (padroeira dos músicos)</td>
-                </tr>
-                <tr>
-                    <td>13 de Dezembro</td>
-                    <td><strong>Dia do Violino</strong></td>
-                </tr>
-            </table>
-        <p>Há, também, outras datas para comemorar essa expressão artística tão conhecida, como o Dia Mundial do Compositor (15 de janeiro) - O Brasil possui, ainda, uma data mais específica para homenagear seus compositores: o Dia do Compositor Brasileiro, que é comemorado no dia 7 de outubro -, o Dia Mundial da Voz (16 de abril), o Dia da Música Clássica (5 de março) e entre muitas outras que você pode acessar <a href="#">clicando aqui.</a></p>
+        <section class="datas_importantes">
+            <h2>Outras datas importantes para o meio musical</h2>
+            <p>Alguns instrumentos e outros elementos musicais possuem suas próprias datas comemorativas, como:</p>
+            <div class="datas_tabela">
+                <table border="3">
+                    <tr>
+                        <td height="30px" width="400px">10 de Março</td>
+                        <td height="30px" width="400px"><strong>Dia do Guitarrista</strong></td>
+                    </tr>
+                    <tr>
+                        <td height="30px" width="400px">21 de Março</td>
+                        <td height="30px" width="400px"><strong>Dia Europeu da Música Antiga</strong></td>
+                    </tr>
+                    <tr>
+                        <td height="30px" width="400px">29 de Março</td>
+                        <td height="30px" width="400px"><strong>Dia Mundial do Piano</strong></td>
+                    </tr>
+                    <tr>
+                        <td height="30px" width="400px">29 de Abril</td>
+                        <td height="30px" width="400px"><strong>Dia Mundial da Dança</strong></td>
+                    </tr>
+                    <tr>
+                        <td height="30px" width="400px">30 de Abril</td>
+                        <td height="30px" width="400px"><strong>Dia Internacional do Jazz</strong></td>
+                    </tr>
+                    <tr>
+                        <td height="30px" width="400px">22 de Novembro</td>
+                        <td height="30px" width="400px"><strong>Dia de Santa Cecília</strong> (padroeira dos músicos)</td>
+                    </tr>
+                </table>
+            </div>
+            <p>Há, também, outras datas para comemorar essa expressão artística tão conhecida, como o Dia Mundial do Compositor (15 de janeiro) - O Brasil possui, ainda, uma data mais específica para homenagear seus compositores: Dia do Compositor Brasileiro, que é comemorado no dia 7 de outubro -, o Dia Mundial da Voz (16 de abril) e o Dia da Música Clássica (5 de março).</p>
         </section>
 
-        <section class="estilos-musicais">
-            <h2>Estilos musicais</h2>
-            <p>A música oferece uma rica tapeçaria de estilos e gêneros. Cada estilo musical carrega uma história única e uma sensação distinta que pode cativar e inspirar ouvintes ao redor do mundo. A seguir, você pode conferir alguns estilos musicais e conhecê-los um pouco melhor.</p>
-            
-            <div class="estilo-musical-container">
-                <div class="musica-classica">
-                    <h3>1. Música Clássica</h3>
-                    <p>A música clássica é um gênero que abrange mais de mil anos de história na sociedade ocidental, desde a Idade Média até o período Pós-Moderno. Caracteriza-se principalmente por ser escrita ou notada, o que permitiu a preservação e a complexidade das composições ao longo dos séculos. Originalmente ligada a contextos religiosos e cortes, a música clássica evoluiu com a emergência de salas de concerto e, no século XX, foi profundamente impactada pelas tecnologias de gravação, tornando-se acessível globalmente e transformando-se em uma experiência pessoal na era digital.</p>
-                </div>
-                <div>
-                    <img src="imagens/foto-violino-musica-classica.webp" 
-                    alt="foto de musica classica" class="foto-classica">
-                </div>
-            </div>
-
-            <div class="estilo-musical-container">
-                <div class="musica-rock">
-                    <h3>2. Rock</h3>
-                    <p>Surgido nos anos 1950 nos Estados Unidos, a música de ratão 🐀 é um gênero musical caracterizado pelo uso de guitarras elétricas, baixos, baterias e vocais energéticos. Evoluiu a partir do rock and roll e do rhythm and blues, dando origem a uma vasta gama de subgêneros, como punk, metal e indie. O rock se tornou um movimento cultural global, influenciando a música, moda e comportamento. Bandas icônicas como The Beatles, Led Zeppelin e The Rolling Stones são marcos fundamentais na história do rock.</p>
-                </div>
-                <div>
-                    <img src="imagens/foto-rock.jpeg" 
-                    alt="foto rock" class="foto-rock">
-                </div>
-            </div>
-
-            <div class="estilo-musical-container">
-                <div class="musica-jazz">
-                    <h3>3. Jazz</h3>
-                    <p>O jazz é um gênero musical que nasceu no início do século XX nos Estados Unidos, especialmente em Nova Orleans. Caracterizado pela improvisação e ritmos complexos, o jazz mistura elementos de blues, ragtime e música africana. É um gênero que valoriza a expressão individual dos músicos, permitindo variações únicas em cada performance. Grandes nomes como Louis Armstrong, Miles Davis e Ella Fitzgerald ajudaram a popularizar o jazz, que permanece uma forma de arte influente e apreciada mundialmente.xidade das composições ao longo dos séculos.</p>
-                </div>
-                <div>
-                    <img src="imagens/foto-jazz.webp" 
-                    alt="foto jazz" class="foto-jazz">
-                </div>
-            </div>
-
-            <div class="estilo-musical-container">
-                <div class="musica-eletronica">
-                    <h3>4. Música Eletronica</h3>
-                    <p>A música eletrônica é um gênero criado a partir de sons gerados por instrumentos eletrônicos e tecnologia digital. Ganhou popularidade a partir dos anos 1980 com o desenvolvimento de sintetizadores e batidas eletrônicas. A música eletrônica abrange diversos subgêneros, como techno, house e trance, e é especialmente popular em clubes e festivais. Artistas como Daft Punk, Kraftwerk e The Chemical Brothers são pioneiros no gênero, que continua a influenciar a música moderna.</p>
-                </div>
-                <div>
-                    <img src="imagens/musica-eletronica-1.webp" 
-                    alt="foto Eletronica" class="foto-eletronica">
-                </div>
-            </div>
-
-            <div class="estilo-musical-container">
-                <div class="musica-mpb">
-                    <h3>5. MPB (Música Popular Brasileira)</h3>
-                    <p>A Música Popular Brasileira (MPB) é um gênero musical que surgiu na década de 1960, combinando elementos da música tradicional brasileira, como samba e bossa nova, com influências internacionais como jazz e rock. A MPB é conhecida por suas letras poéticas e de forte conteúdo social, abordando temas como amor, política e a vida cotidiana. Artistas icônicos como Caetano Veloso, Gilberto Gil e Elis Regina são referências do gênero, que continua a ser uma expressão cultural importante no Brasil.</p>
-                </div>
-                <div>
-                    <img src="imagens/foto-mbp.jpeg" 
-                    alt="foto de mpb" class="foto-mbp">
-                </div>
-            </div>
-
-            <p>Além desses, existem mais vários estilos e gêneros musicais, incluindo alguns que são mais popularmente ouvidos no Brasil. Para conferi-los, <a href="#">clique aqui.</a></p>
+        <section class="estilos_musicais">
+            <h2>Gêneros Musicais</h2>
+            <p>Os gêneros musicais são categorias amplas que agrupam diferentes estilos e formas de música com base em características comuns, como ritmo, melodia, harmonia e instrumentação. Eles ajudam a categorizar e entender a diversidade musical ao redor do mundo, refletindo as tradições culturais, sociais e históricas de diferentes regiões.</p>
+            <p>&nbsp;</p>
+            <p>Gêneros Musicais variam amplamente, desde formas tradicionais e folclóricas até estilos modernos e inovadores. Cada gênero pode incluir uma variedade de subgêneros que se distinguem por suas características próprias, mas todos compartilham elementos que os definem dentro de um contexto musical mais amplo.</p>
+            <p>&nbsp;</p>
+            <p>Esses gêneros evoluem com o tempo, influenciando e sendo influenciados por outros estilos. A música pode ser categorizada com base em fatores como a origem geográfica, os instrumentos predominantes, os temas líricos e as técnicas de produção. A diversidade de gêneros musicais permite uma ampla gama de expressões artísticas e experiências auditivas, contribuindo para a rica tapeçaria cultural da música global.</p>
+            <img src="" alt="">
         </section>
     </main>
-
-    <footer>
-        <div class="container">
-            <p>&copy; 2024 L'harmonie. Todos os direitos reservados.</p>
-        </div>
-    </footer>
-    
 </body>
 </html>
