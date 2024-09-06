@@ -1,206 +1,75 @@
+/*reset básico*/
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body {
-    margin: 0;
-    padding: 0;
-    letter-spacing: 2px;
-}
+/*body*/
 
-header .container {
+header {
+    background-color: #D8CCB2;
     display: flex;
-    flex-direction: column;
+    justify-content: space-between;
     align-items: center;
-    background: linear-gradient(180deg, #FFF 83%, #79624B 100%);
+    padding: 10px 20px;
+    justify-content: center;
 }
 
-header .nome-pagina {
+
+.logo {
     display: flex;
     align-items: center;
-    margin-bottom: 30px;
+    gap: 10px;
 }
 
-header .logo-icone {
-    height: 50px;
-    margin-right: 10px;
+
+.logo img {
+    height: 60px; /* altura da logo */
+    margin-right: 10px; /* espaçamento entre a logo e o texto */
 }
 
-header h1 {
+
+.logo h1 {
+    font-size: 50px;
     color: black;
-    margin: 20pxx   ;
 }
+
 
 nav ul {
+    list-style: none;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 0;
-    margin: 0;
-    list-style: none; /*remove os marcadores de lista*/
+    justify-content: center; /* centraliza horizontalmente */
+    gap: 250px;
+    padding: 30px; /* adiciona espaço interno ao redor dos links de navegação */
 }
 
-#separador {
-    font-size: 25px;
-    color: white;
-}
 
-/* adiciona um espaço entre as páginas */
-nav ul li {
-    margin: 0 30px;
-    position: relative;
-} 
-
-/* configurações das páginas */
 nav ul li a {
-    color: #FFF;
-    text-align: center;
-    font-family: Arial, sans-serif;
-    font-size: 23px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
     text-decoration: none;
-}
-
-main {
-    line-height: 45px;
-}
-
-.paginas a:hover {
-    text-decoration: underline;
-}
-
-.dentro-da-imagem {
-    position: relative;
-    width: 100%;
-    height: 740px;
-    background-image: url(imagens/foto-de-fundo\ 1.png);
-    background-size: cover;
-    font-family: Arial, sans-serif;
-    margin-bottom: 50px;
-}
-
-.titulo-container {
-    z-index: 1;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 740px;
-    flex-shrink: 0;
-    background: linear-gradient(180deg, rgba(38, 19, 8, 0.68) 94.5%, rgba(255, 255, 255, 0.68) 100%);
-}
-
-.textos-titulo {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 600px;
-    text-align: center;
-    z-index: 2;
-}
-
-.textos-titulo h2 {
-    width: 881.443px;
-    height: 152.971px;
-    flex-shrink: 0;
-    color: #FFF;
-    text-align: center;
-    text-shadow: 0px 4px 6px rgba(0, 0, 0, 0.25);
-    font-family: Arial, Helvetica, sans-serif
-    font-size: 59.535px;
-    font-style: normal;
-    font-weight: bold;
-    line-height: normal;
-}
-
-table {
-    width: 700px;
-    height: 400px;
-    justify-content: center;
-    align-items: center;
-    font-size: 20px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-
-.textos-titulo p {
-    color: #FFF;
-    width: 729px;
-    height: 75px;
-    flex-shrink: 0;
-    text-align: center;
-    font-family: Arial, sans-serif;
-    font-size: 27px;
-    font-style: normal;
-    font-weight: 300;
-    line-height: 40px;
-}
-
-p {
+    color: #000;
     font-size: 25px;
     font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    display: inline-block; /* necessário para que height e line-height funcionem */
+    height: 40px; /* ajusta a altura dos links de navegação */
 }
 
-h2 {
-    font-size: 60px;
-    font-family: Arial, Helvetica, sans-serif
-}
 
-h3 {
-    font-size: 50px;
-}
+.nome_inicio h2 {
+    color: #2A2344;
+    text-shadow: 10.362px 5.757px 6.908px rgba(0, 0, 0, 0.47);
+    font-family: "Inria Serif";
+    font-size: 33.389px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
 
-.sobre {
-    margin: 50px auto;
-    text-align: center;
-    width: 80%;
-    padding: 20px;
-}
-
-.estilo-musical-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 50px;
-    width: 100%;
-}
-
-.estilo-musical-container p {
-    max-width: 700px;
-}
-
-.foto-classica {
-    width: 600px;
-    height: 450px;
-}
-
-.foto-rock {
-    width: 600px;
-    height: 450px;
-}
-
-.foto-eletronica {
-    width: 600px;
-    height: 400px;
-}
-
-.foto-jazz {
-    width: 600px;
-    height: 400px;
-}
-
-.foto-mpb {
-    width: 600px;
-    height: 400px;
-}
-
-.estilo-musical-container .musica-classica .musica-rock .musica-jazz .musica-eletronica .musica-mpb {
-    display: flex;
-    flex-direction: column; /* muda a direção do flex para baixo (colunas) */
-    justify-content: center;
-    align-items: start;
+    
+    background-color: #ded3bc; /* cor de fundo do retângulo */
+    padding: 10px 20px; /* espaço interno ao redor do texto */
+    border-radius: 30px; /* cantos arredondados do retângulo (opcional) */
+    margin: 30px 236px; /* espaço externo acima e abaixo do retângulo, centralizado horizontalmente */
+    width: fit-content;
 }
 
