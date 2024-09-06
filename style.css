@@ -5,6 +5,16 @@
     box-sizing: border-box;
 }
 
+
+p, h1, h2, nav ul li a {
+    letter-spacing: 2.5px;
+}
+
+p, nav ul li a, td {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+
 /*body*/
 
 header {
@@ -32,6 +42,9 @@ header {
 
 .logo h1 {
     font-size: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-style: normal;
     color: black;
 }
 
@@ -49,8 +62,6 @@ nav ul li a {
     text-decoration: none;
     color: #fff;
     font-size: 25px;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: lighter;
     display: inline-block; /* necessário para que height e line-height funcionem */
     height: 40px; /* ajusta a altura dos links de navegação */
 }
@@ -101,5 +112,43 @@ main {
     bottom: 132px;
     background: rgba(42, 35, 68, 0.88);
     box-shadow: 0px 10.267px 25.858px 0px rgba(0, 0, 0, 0.77); /* Azul escuro com 50% de opacidade */
-    z-index: ; /* Garante que a camada esteja sobre a imagem */
+ /* Garante que a camada esteja sobre a imagem */
 }
+
+
+.hero_content {
+    text-align: center;
+    color: #fff;
+}
+
+
+.hero_content h2 {
+    margin: 0;
+    text-align: center; /* Centraliza o texto dentro da caixa */
+    width: 900px; /* Largura da caixa em relação ao contêiner pai */
+    margin: 20px auto;
+
+    text-align: center;
+    text-shadow: 18px 10px 12px rgba(0, 0, 0, 0.47);
+    font-family: "Inria Serif";
+    font-size: 80px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+
+.hero_content p {
+    text-align: center;
+    width: 1000px;
+    margin: 20px auto;
+
+    font-size: 40px;
+    text-align: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-style: normal;
+    font-weight: lighter; /* corrigir espessura da fonte */
+    line-height: normal;
+}
+
+
