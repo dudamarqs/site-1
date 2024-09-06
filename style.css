@@ -47,10 +47,10 @@ nav ul {
 
 nav ul li a {
     text-decoration: none;
-    color: #000;
+    color: #fff;
     font-size: 25px;
     font-family: Arial, Helvetica, sans-serif;
-    font-weight: bold;
+    font-weight: lighter;
     display: inline-block; /* necessário para que height e line-height funcionem */
     height: 40px; /* ajusta a altura dos links de navegação */
 }
@@ -73,3 +73,33 @@ nav ul li a {
     width: fit-content;
 }
 
+
+main { 
+    background-image: url(imagens/foto-de-fundo\ 1.png);
+    background-repeat: no-repeat; /* evita a repetição da imagem */
+    background-size: cover; /* ajusta a imagem para cobrir toda a área do contêiner */
+    background-position: center; /* centraliza a imagem no contêiner */
+    height: 80vh; /* faz ocupar toda a altura da tela */
+    width: 100%; /* faz ocupar toda a largura da tela */ 
+    overflow: hidden;  
+}
+
+
+.hero {
+    position: relative; /* faz o conteúdo ficar acima da camada de sobreposição */
+    z-index: 2; /* faz o conteúdo ficar visível sobre a camada de sobreposição */
+    padding: 20px; 
+}
+
+
+/* Estilos para a camada de sobreposição */
+.overlay {
+    position: absolute; /* Posiciona a camada sobre o contêiner principal */
+    top: 80px;
+    left: 0;
+    right: 0;
+    bottom: 132px;
+    background: rgba(42, 35, 68, 0.88);
+    box-shadow: 0px 10.267px 25.858px 0px rgba(0, 0, 0, 0.77); /* Azul escuro com 50% de opacidade */
+    z-index: ; /* Garante que a camada esteja sobre a imagem */
+}
