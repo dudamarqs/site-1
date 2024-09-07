@@ -1,0 +1,202 @@
+/*reset básico*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    background-color: #2A2344;
+}
+
+
+p, h1, h2, nav ul li a {
+    letter-spacing: 1px;
+}
+
+
+p, nav ul li a, td {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+
+/*body*/
+
+header {
+    background-color: #D8CCB2;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    justify-content: center;
+    box-shadow: 0px 11.028px 25.858px 0px rgba(0, 0, 0, 0.55);
+    z-index: 1000; /* corrigir sombra do header */
+}
+
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+
+.logo img {
+    height: 60px; /* altura da logo */
+    margin-right: 10px; /* espaçamento entre a logo e o texto */
+}
+
+
+.logo h1 {
+    font-size: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: black;
+}
+
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center; /* centraliza horizontalmente */
+    gap: 250px;
+    padding: 50px; /* adiciona espaço interno ao redor dos links de navegação */
+    /* no style.css é 30px */
+}
+
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 25px;
+    display: inline-block; /* necessário para que height e line-height funcionem */
+    height: 40px; /* ajusta a altura dos links de navegação */
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+
+.nav_links a:hover {
+    transform: scale(1.3); /* Aumenta o tamanho quando passar o mouse por cima */
+    color: #fff; /* Muda a cor ao passar o mouse */
+    text-decoration: underline;
+}
+
+
+.nome_playlists h2 {
+    color: #2A2344;
+    text-shadow: 10.362px 5.757px 6.908px rgba(0, 0, 0, 0.47);
+    font-family: "Inria Serif";
+    font-size: 33.389px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+
+    
+    background-color: #ded3bc; /* cor de fundo do retângulo */
+    padding: 10px 20px; /* espaço interno ao redor do texto */
+    border-radius: 30px; /* cantos arredondados do retângulo (opcional) */
+    margin: 30px 200px; /* espaço externo acima e abaixo do retângulo, centralizado horizontalmente */
+    width: fit-content;
+}
+
+
+main {
+    height: 80vh;
+    width: 100%;
+    color: #fff;
+}
+
+
+.hero_container {
+    display: flex;
+    height: 700px;
+}
+
+
+.hero_content {
+    display: flex;
+    height: 700px;
+}
+
+
+.imagem_playlist img {
+    height: 100%;
+}
+
+
+.hero_content h2 {
+    width: 800px;
+    height: 193px;
+    flex-shrink: 0;
+    color: #FFF;
+    text-shadow: 18px 10px 12px rgba(0, 0, 0, 0.47);
+    font-family: "Inria Serif";
+    font-size: 70px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin: 40px 200px;
+    text-align: left;
+}
+
+
+.hero_content p {
+    width: 1000px;
+    height: 152px;
+    flex-shrink: 0;
+    color: #FFF;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 38px; /* 150.28% */
+    margin: 100px 200px;
+    line-height: normal;
+    text-align: left;
+}
+
+
+.playlists {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 colunas com largura igual */
+    grid-template-rows: repeat(2, auto); /* 2 linhas com altura ajustada automaticamente */
+    gap: 150px; /* Espaçamento entre os itens (ajuste conforme necessário) */
+    padding: 200px 400px; /* Espaçamento interno (opcional) */
+}
+
+
+.playlist_item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Adiciona transição suave para o zoom e sombra */
+    overflow: hidden; /* Garante que o conteúdo não exceda os limites da caixa */
+    padding: 10px;
+}
+
+
+.playlist_item:hover {
+    transform: scale(1.1);
+}
+
+
+.playlist_image img {
+    width: 100%; /* Faz com que a imagem ocupe toda a largura do contêiner */
+    height: auto; /* Mantém a proporção da imagem */
+    border-radius: 8px; /* Adiciona bordas arredondadas às imagens (opcional) */
+    border-radius: 46.468px;
+    background: #D9D9D9;
+    box-shadow: 8.674px 8.674px 7.435px 0px rgba(0, 0, 0, 0.25);
+}
+
+
+.playlists p {
+    font-size: 30px;
+    width: 300px;
+    flex-shrink: 0;
+    color: #fff;
+    text-align: center;
+    font-weight: 500;
+}
