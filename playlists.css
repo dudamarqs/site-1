@@ -31,7 +31,8 @@ header {
     padding: 10px 20px;
     justify-content: center;
     box-shadow: 0px 11.028px 25.858px 0px rgba(0, 0, 0, 0.55);
-    z-index: 1000; /* corrigir sombra do header */
+    z-index: 1000; 
+    /* corrigir sombra do header */
 }
 
 
@@ -78,8 +79,8 @@ nav ul li a {
 
 
 .nav_links a:hover {
-    transform: scale(1.3); /* Aumenta o tamanho quando passar o mouse por cima */
-    color: #fff; /* Muda a cor ao passar o mouse */
+    transform: scale(1.3); /* aumenta o tamanho quando passar o mouse por cima */
+    color: #fff; /* muda a cor ao passar o mouse */
     text-decoration: underline;
 }
 
@@ -93,7 +94,6 @@ nav ul li a {
     font-weight: 700;
     line-height: normal;
 
-    
     background-color: #ded3bc; /* cor de fundo do retângulo */
     padding: 10px 20px; /* espaço interno ao redor do texto */
     border-radius: 30px; /* cantos arredondados do retângulo (opcional) */
@@ -121,8 +121,22 @@ main {
 }
 
 
+/* define a animação */
+@keyframes slideIn {
+    0% {
+      transform: translateX(100%); /* move a imagem para fora da tela à direita */
+      opacity: 0; /* Começa com opacidade 0 (invisível) */
+    }
+    100% {
+      transform: translateX(0); /* A imagem volta à sua posição original */
+      opacity: 1; /* Torna-se completamente visível */
+    }
+}
+
+
 .imagem_playlist img {
     height: 100%;
+    animation: slideIn 1.5s ease-in-out;
 }
 
 
