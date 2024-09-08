@@ -235,18 +235,19 @@ main {
 
 .shows_local {
     display: flex;
-    gap: 10px;
+    gap: 5px;
     align-items: center;
     width: 500px;
-    height: 70px;
+    height: 90px;
     text-align: center;
-
+    border: yellow solid;
 }
 
 
 .shows_local_icone img {
     height: 30px;
     width: auto;
+    margin-bottom: 10px;
 }
 
 

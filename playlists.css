@@ -85,6 +85,16 @@ nav ul li a {
 }
 
 
+@keyframes fadeIn {
+    0% {
+      opacity: 0; /* o texto começa invisível */
+    }
+    100% {
+      opacity: 1; /*  o texto torna-se completamente visível */
+    }
+}
+
+
 .nome_playlists h2 {
     color: #2A2344;
     text-shadow: 10.362px 5.757px 6.908px rgba(0, 0, 0, 0.47);
@@ -121,22 +131,10 @@ main {
 }
 
 
-/* define a animação */
-@keyframes slideIn {
-    0% {
-      transform: translateX(100%); /* move a imagem para fora da tela à direita */
-      opacity: 0; /* Começa com opacidade 0 (invisível) */
-    }
-    100% {
-      transform: translateX(0); /* A imagem volta à sua posição original */
-      opacity: 1; /* Torna-se completamente visível */
-    }
-}
-
-
 .imagem_playlist img {
     height: 100%;
-    animation: slideIn 1.5s ease-in-out;
+    animation: fadeIn 2s ease-in-out; /* Nome da animação, duração e suavização */
+    opacity: 100;
 }
 
 
@@ -153,6 +151,9 @@ main {
     line-height: normal;
     margin: 40px 200px;
     text-align: left;
+
+    animation: fadeIn 2s ease-in-out; /* Nome da animação, duração e suavização */
+    opacity: 100;
 }
 
 
@@ -169,6 +170,16 @@ main {
     margin: 100px 200px;
     line-height: normal;
     text-align: left;
+
+    animation: fadeIn 2s ease-in-out; /* Nome da animação, duração e suavização */
+    opacity: 100;
+}
+
+
+.linha_divisora {
+    width: 100vh;
+    border: solid #D8CCB2 3px;
+    margin-top: 60px;
 }
 
 
@@ -177,7 +188,7 @@ main {
     grid-template-columns: repeat(3, 1fr); /* 3 colunas com largura igual */
     grid-template-rows: repeat(2, auto); /* 2 linhas com altura ajustada automaticamente */
     gap: 150px; /* Espaçamento entre os itens (ajuste conforme necessário) */
-    padding: 200px 400px; /* Espaçamento interno (opcional) */
+    padding: 90px 400px; /* Espaçamento interno (opcional) */
 }
 
 
@@ -212,5 +223,16 @@ main {
     flex-shrink: 0;
     color: #fff;
     text-align: center;
+    font-weight: 500;
+}
+
+
+footer {
+    border: #D8CCB2 solid;
+    text-align: center;
+    background-color: #D8CCB2;
+    color: #2A2344;
+    padding: 10px;
+    font-size: 23px;
     font-weight: 500;
 }
