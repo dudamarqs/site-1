@@ -4,7 +4,7 @@ Este repositório contém o código para um site dedicado a celebrar o Dia Inter
 
 ## Descrição do Projeto
 
-O site é desenvolvido utilizando HTML e CSS e visa fornecer informações sobre a importância do Dia Internacional da Música, eventos e outras. O design foca em uma apresentação clara, destacando a história dessa data, datas importantes para o meio musical, estilos musicais e outros tópicos
+O site é desenvolvido utilizando HTML e CSS e visa fornecer informações sobre a importância do Dia Internacional da Música, eventos e outras coisas. O design foca em uma apresentação clara, destacando a história e importância dessa data, datas importantes para o meio musical, estilos musicais e outros tópicos
 
 ## Tecnologias Utilizadas
 
@@ -14,7 +14,7 @@ O site é desenvolvido utilizando HTML e CSS e visa fornecer informações sobre
 ## Funcionalidades
 
 - **Página Inicial**: Informações gerais sobre o Dia Internacional da Música.
-- **Seção de Eventos**: Lista de eventos e celebrações em diferentes partes do mundo.
-- **Recursos**: Links para recursos adicionais sobre a música e o impacto cultural.
-
-- outros recursos serão desenvolvidos no andamento do projeto.
+- **Seção de Eventos**: Lista de eventos musicais e shows em Brasília.
+- **Playlists**: Playlists prontas de diferentes gêneros musicais.
+- **Gêneros Musicais**: Página que explica alguns gêneros musicais globais e gêneros musicais brasileiros.
+- **Comunidade**: Convite para fazer parte da comunidade no Telegram.
