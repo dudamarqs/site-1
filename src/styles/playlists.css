@@ -31,7 +31,8 @@ header {
     padding: 10px 20px;
     justify-content: center;
     box-shadow: 0px 11.028px 25.858px 0px rgba(0, 0, 0, 0.55);
-    z-index: 1000; /* corrigir sombra do header */
+    z-index: 1000; 
+    /* corrigir sombra do header */
 }
 
 
@@ -50,8 +51,8 @@ header {
 
 .logo h1 {
     font-size: 50px;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: 400;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 600;
     font-style: normal;
     color: black;
 }
@@ -78,9 +79,10 @@ nav ul li a {
 
 
 .nav_links a:hover {
-    transform: scale(1.3); /* Aumenta o tamanho quando passar o mouse por cima */
-    color: #fff; /* Muda a cor ao passar o mouse */
-    text-decoration: underline;
+    transform: scale(1.3); /* aumenta o tamanho quando passar o mouse por cima */
+    color: #fff; /* muda a cor ao passar o mouse */
+    text-decoration: none;
+    font-weight: 700;
 }
 
 
@@ -94,7 +96,7 @@ nav ul li a {
 }
 
 
-.titulo_pagina h2 {
+.nome_playlists h2 {
     color: #2A2344;
     text-shadow: 10.362px 5.757px 6.908px rgba(0, 0, 0, 0.47);
     font-family: "Inria Serif";
@@ -103,7 +105,6 @@ nav ul li a {
     font-weight: 700;
     line-height: normal;
 
-    
     background-color: #ded3bc; /* cor de fundo do retângulo */
     padding: 10px 20px; /* espaço interno ao redor do texto */
     border-radius: 30px; /* cantos arredondados do retângulo (opcional) */
@@ -131,7 +132,7 @@ main {
 }
 
 
-.hero_content_image img {
+.imagem_playlist img {
     height: 100%;
     animation: fadeIn 2s ease-in-out; /* Nome da animação, duração e suavização */
     opacity: 100;
@@ -162,7 +163,7 @@ main {
     height: 152px;
     flex-shrink: 0;
     color: #FFF;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;;
     font-size: 40px;
     font-style: normal;
     font-weight: 300;
@@ -183,31 +184,31 @@ main {
 }
 
 
-.shows {
+.playlists {
     display: grid;
-    grid-template-columns: repeat(2, 1fr); /* 3 colunas com largura igual */
-    grid-template-rows: repeat(3, auto); /* 2 linhas com altura ajustada automaticamente */
-    gap: 150px; /* espaçamento entre os itens */
-    padding: 60px 400px;
+    grid-template-columns: repeat(3, 1fr); /* 3 colunas com largura igual */
+    grid-template-rows: repeat(2, auto); /* 2 linhas com altura ajustada automaticamente */
+    gap: 150px; /* Espaçamento entre os itens (ajuste conforme necessário) */
+    padding: 90px 400px; /* Espaçamento interno (opcional) */
 }
 
 
-.shows_item {
+.playlist_item {
     display: flex;
     flex-direction: column;
     align-items: center;
     transition: transform 0.3s ease, box-shadow 0.3s ease; /* Adiciona transição suave para o zoom e sombra */
     overflow: hidden; /* Garante que o conteúdo não exceda os limites da caixa */
-    padding: 30px;
+    padding: 10px;
 }
 
 
-.shows_item:hover {
+.playlist_item:hover {
     transform: scale(1.1);
 }
 
 
-.shows_image img {
+.playlist_image img {
     width: 100%; /* Faz com que a imagem ocupe toda a largura do contêiner */
     height: auto; /* Mantém a proporção da imagem */
     border-radius: 8px; /* Adiciona bordas arredondadas às imagens (opcional) */
@@ -217,42 +218,13 @@ main {
 }
 
 
-.shows_item p {
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-weight: 500;
-    padding-top: 10px;
-    color: #FFF;
-}
-
-
-.shows_item h1 {
-    font-size: 40px;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    text-align: center;
+.playlists p {
+    font-size: 30px;
+    width: 300px;
+    flex-shrink: 0;
     color: #fff;
-}
-
-
-.shows_local {
-    display: flex;
-    gap: 5px;
-    align-items: center;
-    width: 500px;
-    height: 90px;
     text-align: center;
-    border: yellow solid;
-}
-
-
-.shows_local_icone img {
-    height: 30px;
-    width: auto;
-    margin-bottom: 10px;
-}
-
-
-.shows_local_texto {
-    font-size: 20px;
+    font-weight: 500;
 }
 
 
